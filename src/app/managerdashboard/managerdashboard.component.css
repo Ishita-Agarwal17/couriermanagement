@@ -1,0 +1,68 @@
+label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .navbar{
+      padding: 1.5rem;
+  }
+  
+  .card-container.card {
+    max-width: 400px !important;
+    padding: 40px 40px;
+  }
+  
+  .card {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.agamisoft.com%2Fproducts%2Fcourier-management-system%2F&psig=AOvVaw3flZYG78oUjmJ8FLfoCbSn&ust=1639567844736000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDeiaqY4_QCFQAAAAAdAAAAABAJ");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div{
+    background: url("https://www.agamisoft.com/wp-content/uploads/2019/09/Courier-Service-Management-.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    width: 100%; height: 100%;
+    position: absolute; 
+    top: 56; left: 0;
+    text-align: center;
+      
+  }
+  
+
+  button{
+      padding: 18px;
+      margin: 25px;
+      background-color: wheat;
+      border-radius: 10px;
+  }

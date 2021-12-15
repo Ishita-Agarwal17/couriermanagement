@@ -1,0 +1,23 @@
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> Staff List</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>empid</th>
+                    <th> name</th>
+                    <th> role</th>
+                    <th> office </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let staff of stafflist">
+                        <td> {{ staff.empid}}</td>
+                        <td> {{ staff.name}}</td>
+                        <td> {{ staff.role}}</td>
+                        <td> {{ staff.receiver}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

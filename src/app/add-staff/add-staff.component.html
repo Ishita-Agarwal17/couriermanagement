@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+     
+      <li><a  routerLink="/view" class="nav-link">View Employees</a></li>
+      <li><a  routerLink="/addstaff" class="nav-link">Add New Employee</a></li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile"> Manager </a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+
+<div class="col-md-6">
+    <h2 class="text-center">Add Employee</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Employee id:</label>
+        <input type="name" [(ngModel)]="user.empid" placeholder="Employee id" name="name" class="form-control" id="name">
+      </div>
+    
+      <div class="form-group">
+        <label for="designation">Name:</label>
+        <input [(ngModel)]="user.name" placeholder="Name" name="designation" class="form-control" id="designation">
+      </div>
+    
+      <div class="form-group">
+        <label for="empId">role</label>
+        <input [(ngModel)]="user.role" placeholder="role" name="Employee Id" class="form-control" id="employeeid">
+      </div>
+    
+      <button class="btn btn-success" (click)="createEmployee()">Create</button>
+    </form>
+    </div>

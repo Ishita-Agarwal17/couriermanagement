@@ -1,0 +1,31 @@
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> Couriers List</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>courierid</th>
+                    <th> status</th>
+                    <th> sender</th>
+                    <th> receiver </th>
+                    <th> consignmentno</th>
+                    <th> initiatedDate</th>
+                    <th> deliveredDate </th>
+                    <th> paymentamt </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let courier of couriers">
+                        <td> {{ courier.courierid}}</td>
+                        <td> {{ courier.status}}</td>
+                        <td> {{ courier.sender}}</td>
+                        <td> {{ courier.receiver}}</td>
+                        <td> {{ courier.consignmentno}}</td>
+                        <td> {{ courier.initiatedDate}}</td>
+                        <td> {{ courier.deliveredDate}}</td>
+                        <td> {{ courier.paymentamt}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

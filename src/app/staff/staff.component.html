@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+   <!-- s<a href="#" class="navbar-brand">CourierManagement</a> -->
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      
+      <li><a  routerLink="/view" class="nav-link">View Employees</a></li>
+      <li><a  routerLink="/addstaff" class="nav-link">Add New Employee</a></li>
+      
+    </ul>
+
+    <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile"> Manager </a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+
+<div class="col-md-6">
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>empid</th>
+      <th>name</th>
+      <th>role</th>
+      <th>DELETE</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let staff of staffs">
+            <td>{{staff.empid}}</td>
+            <td>{{staff.name}}</td>
+            <td>{{staff.role}}</td>
+            <td>{{staff.office}}</td>
+            <td><button class="btn btn-danger" (click)="deleteEmployee(staff)"> Delete Employee</button></td>
+            </tr>
+    </tbody>
+      </table>
+  
+    </div>

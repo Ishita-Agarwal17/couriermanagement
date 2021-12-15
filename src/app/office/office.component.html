@@ -1,0 +1,26 @@
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> Staff List</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>officeid</th>
+                    <th> address</th>
+                    <th> openingTime</th>
+                    <th> closingTime </th>
+                    <th> staffmembers </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let office of officelist">
+                        <td> {{ office.officeid}}</td>
+                        <td> {{ office.address}}</td>
+                        <td> {{ office.openingTime}}</td>
+                        <td> {{ office.closingTime}}</td>
+                        <td> {{ office.staffmembers}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

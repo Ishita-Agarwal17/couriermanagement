@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">CourierManagement</a>
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item">
+        <a href="/home" class="nav-link" routerLink="home">Home </a>
+      </li>
+      
+    </ul>
+
+    <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile"> Manager </a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="">
+    <button (click)="courierlist()">Courier list</button>
+    <button  (click)="addstaff()">Add/ Delete Staff</button>
+    <button  (click)="stafflist()">Staff list</button>
+    <button  (click)="officelist()">Office list</button>
+  </div>

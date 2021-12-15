@@ -1,0 +1,202 @@
+<div>
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg ">
+      <div class="container">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+          aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <!-- Brand/logo -->
+        <!-- <a class="navbar-brand" href="#">
+          <img src="../../assets/img/logo3.jpg" alt="logo" style="width:80px;">
+        </a> -->
+        <a class="navbar-brand text-brand" href="index.html">Courier Management System</a>
+        <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+          data-target="#navbarTogglerDemo01" aria-expanded="false">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/about']">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/developers']">Developers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/userLogin']">Login as Customer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/masterLogin']">Login as Manager</a>
+              </li>
+            <!-- <li *ngIf="!login()" class="nav-item">
+              <a class="nav-link" [routerLink]="['/login']">Login</a>
+            </li> -->
+            <!-- <li *ngIf="login()" class="nav-item">
+              <a class="nav-link" (click)="logout()" [routerLink]="['/login']">Logout</a>
+            </li> -->
+            <li class="login-icon mt-2">
+              <a class="user"><span class="fa fa-user-circle-o" aria-hidden="true"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="imgbox">
+    <img class="center-fit" src="../../assets/home.jpg" alt="Home gif">
+    
+  </div>
+
+  <section class="section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Courier Management System</h3>
+            </div>
+            <div class="w-body-a">
+              <p class="w-text-a color-text-a">
+                The courier management system will have 5 different modules namely
+customer module, office module,manager module, shipment module, payment
+module. 
+              </p>
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li class="color-a">
+                  <span class="color-text-a">Phone .</span> ishita.123.agl@gmail.com
+                </li>
+                <li class="color-a">
+                  <span class="color-text-a">Email .</span> +91 9876543214
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <!-- <div class="w-header-a">
+              <h3 class="w-title-a text-brand">The Company</h3>
+            </div> -->
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <!-- <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i>Site Map
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i>Legal
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i>Careers
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i>Privacy Policy
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Our Branches</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <!-- <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> Guwahati
+                </li> -->
+                <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> Hyderabad
+                </li>
+                <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> Pune
+                </li>
+                <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> Mumbai
+                </li>
+                <!-- <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> Chennai
+                </li>
+                <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> Bangaluru
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="list-inline-item">
+                <a [routerLink]="['/about']">About</a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a a [routerLink]="['/login']">Property</a>
+              </li> -->
+              <li class="list-inline-item">
+                <a [routerLink]="['/developers']">Developers</a>
+              </li>
+              <li class="list-inline-item">
+                <a [routerLink]="['/contact']">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              
+              
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">Courier Management</span> All Rights Reserved.
+            </p>
+          </div>
+          <!-- <div>
+            Designed by Team 1
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </footer>
